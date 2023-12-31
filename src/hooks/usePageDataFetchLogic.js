@@ -2,15 +2,16 @@ import { useCallback, useContext, useEffect } from 'react';
 
 import CategoryContext from '../context/CategoryContext';
 
-import { getCategoryPageData } from '../services';
+import { fetchCategoryPageData } from '../services';
 
 const usePageDataFetchLogic = () => {
   const { setPageData } = useContext(CategoryContext);
 
-  const fetchPageData = useCallback(
+  //function for getting page data and append to the already loaded data
+  const getPageData = useCallback(
     async (pageNum = 1) => {
       try {
-        const pageData = await getCategoryPageData(pageNum);
+        const pageData = await fetchCategoryPageData(pageNum);
         setPageData(prevPageData => {
           return {
             ...pageData,
@@ -26,10 +27,11 @@ const usePageDataFetchLogic = () => {
   );
 
   useEffect(() => {
-    fetchPageData();
-  }, [fetchPageData]);
+    //fetching data for the first page on component mount
+    getPageData();
+  }, [getPageData]);
 
-  return { fetchPageData };
+  return { getPageData };
 };
 
 export default usePageDataFetchLogic;

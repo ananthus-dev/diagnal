@@ -10,9 +10,9 @@ import usePageDataFetchLogic from '../../hooks/usePageDataFetchLogic';
 import useScrollHandlingLogic from '../../hooks/useScrollHandlingLogic';
 
 function CategoryPage () {
-  const { fetchPageData } = usePageDataFetchLogic();
+  const { getPageData } = usePageDataFetchLogic();
 
-  useScrollHandlingLogic(fetchPageData);
+  useScrollHandlingLogic(getPageData);
 
   return (
     <>

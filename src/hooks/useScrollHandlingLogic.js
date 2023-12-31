@@ -3,12 +3,13 @@ import throttle from 'lodash.throttle';
 
 import CategoryContext from '../context/CategoryContext';
 
-const useScrollHandlingLogic = fetchPageData => {
+const useScrollHandlingLogic = getPageData => {
   const {
     isSearchMode,
     pageData: { totalItems, currentPage, contentList }
   } = useContext(CategoryContext);
 
+  //for storing previous scroll position. Used to check if user is scrolling down or up
   const prevScrollTop = useRef(0);
 
   const handleScroll = useCallback(() => {
@@ -29,12 +30,13 @@ const useScrollHandlingLogic = fetchPageData => {
         currentScrollTop >= 0.7 * maxScrollTop;
 
       if (isScrollPositionThresholdCrossed) {
-        fetchPageData(+currentPage + 1);
+        //fetching data for the next page
+        getPageData(+currentPage + 1);
       }
     }
 
     prevScrollTop.current = currentScrollTop;
-  }, [isSearchMode, contentList, currentPage, fetchPageData, totalItems]);
+  }, [isSearchMode, contentList, currentPage, getPageData, totalItems]);
 
   useEffect(() => {
     const throttledScrollHandler = throttle(handleScroll, 200);
