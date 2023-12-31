@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/diagnal/static/css/main.a6798e7a.css",
+    "main.css": "/diagnal/static/css/main.136b769b.css",
     "main.js": "/diagnal/static/js/main.802c59b3.js",
     "static/css/405.948a084f.chunk.css": "/diagnal/static/css/405.948a084f.chunk.css",
     "static/js/405.f19d7dd4.chunk.js": "/diagnal/static/js/405.f19d7dd4.chunk.js",
@@ -11,14 +11,14 @@
     "static/media/TitilliumWeb-SemiBold.ttf": "/diagnal/static/media/TitilliumWeb-SemiBold.d4d3eeb6e2367e6796c3.ttf",
     "static/media/TitilliumWeb-ExtraLight.ttf": "/diagnal/static/media/TitilliumWeb-ExtraLight.2d07e99a2247f13f7969.ttf",
     "index.html": "/diagnal/index.html",
-    "main.a6798e7a.css.map": "/diagnal/static/css/main.a6798e7a.css.map",
+    "main.136b769b.css.map": "/diagnal/static/css/main.136b769b.css.map",
     "main.802c59b3.js.map": "/diagnal/static/js/main.802c59b3.js.map",
     "405.948a084f.chunk.css.map": "/diagnal/static/css/405.948a084f.chunk.css.map",
     "405.f19d7dd4.chunk.js.map": "/diagnal/static/js/405.f19d7dd4.chunk.js.map",
     "787.517421d6.chunk.js.map": "/diagnal/static/js/787.517421d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6798e7a.css",
+    "static/css/main.136b769b.css",
     "static/js/main.802c59b3.js"
   ]
 }
