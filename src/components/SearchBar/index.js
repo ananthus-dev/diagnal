@@ -37,7 +37,7 @@ function SearchBar () {
     <input
       className={styles.container}
       type='text'
-      placeholder={`Enter atleast ${SEARCH_MIN_CHARS} letters of the title to begin searching`}
+      placeholder={`Enter atleast ${SEARCH_MIN_CHARS} letters of the title`}
       value={searchText}
       onChange={onChangeSearchText}
       minLength={SEARCH_MIN_CHARS}
