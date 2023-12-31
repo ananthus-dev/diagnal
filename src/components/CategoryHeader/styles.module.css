@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  align-items: center;
+  background: url("../../assets/images/nav_bar.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: sticky;
+  top: 0px;
+  box-sizing: content-box;
+  height: 50px;
+  padding: 15px 0 20px 0;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.categoryTitle {
+  margin: 0;
+  flex: 1;
+  margin-left: 12px;
+  font-size: 2rem;
+  font-family: "TitilliumWeb-Light";
+  font-weight: normal;
+}
+
+.textField {
+  flex: 1;
+  margin: 10px;
+  font-family: "TitilliumWeb-SemiBold";
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 50px;
+  border-color: transparent;
+}
+
+.textField::placeholder {
+  font-family: "TitilliumWeb-Italic";
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 30px;
+    padding: 10px 0 15px 0;
+  }
+
+  .icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .categoryTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    height: 20px;
+    padding: 5px 0 10px 0;
+  }
+
+  .icon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .categoryTitle {
+    font-size: 1.2rem;
+  }
+
+  .textField {
+    margin: 5px;
+    padding: 2px 5px;
+  }
+
+  .textField::placeholder {
+    font-family: "TitilliumWeb-Italic";
+    font-size: 1rem;
+  }
+}

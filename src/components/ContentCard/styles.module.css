@@ -1,0 +1,38 @@
+.container {
+  width: min-content;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+
+  .thumbnail {
+    /* aspect-ratio: 2/3; */
+    height: auto;
+    width: 100%;
+  }
+
+  p {
+    font-family: "TitilliumWeb-ExtraLight";
+    font-size: 1.6rem;
+    margin: 3px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    p {
+      font-size: 1.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    p {
+      font-size: 1rem;
+    }
+  }
+}
